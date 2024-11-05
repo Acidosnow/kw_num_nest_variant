@@ -1,7 +1,9 @@
+#!/usr/bin/env node
+
 const lib = require("./lib");
 
 if (process.argv.length <= 3) {
-    console.log("Insufficient parameter!");
+    console.log("Insufficient parameters!");
     process.exit(1);
 }
 
@@ -27,6 +29,10 @@ switch (command) {
             process.exit(1);
         }
         result = lib.prime(numbers);
+        if (result == -1) {
+            console.log("Argument should be non-negative number!");
+            process.exit(1);
+        }
         break;
     case "factorial":
         if (numbers.length > 1) {
@@ -34,6 +40,11 @@ switch (command) {
             process.exit(1);
         }
         result = lib.factorial(numbers);
+
+        if (result == -1) {
+            console.log("Argument should be non-negative number up to  15!");
+            process.exit(1);
+        }
         break;
     default:
         console.log("Wrong command!");
