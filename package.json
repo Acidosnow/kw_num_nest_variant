@@ -1,14 +1,14 @@
 {
-  "name": "kw_num_nest_variant",
-  "version": "0.0.1",
-  "description": "numnest project variation.",
-  "main": "main.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "bin": {
-    "numnest": "./main.js"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "kw_num_nest_variant",
+    "version": "0.0.1",
+    "description": "numnest project variation.",
+    "main": "main.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "bin": {
+        "numnest": "main.js"
+    },
+    "author": "",
+    "license": "ISC"
 }
